@@ -1,0 +1,31 @@
+.fizzbuzz {
+  width: 50px;
+  height: 50px;
+  background: black;
+  margin: 20px;
+  float: left;
+  color: white;
+  text-align: center;
+}
+
+.fizzbuzz:nth-of-type(3n).fizzbuzz:nth-of-type(5n){
+  background: orange;
+}
+.fizzbuzz:nth-of-type(3n).fizzbuzz:nth-of-type(5n)::before{
+  content: "fizzbuzz"
+}
+
+
+.fizzbuzz:nth-of-type(3n){
+  background: green;
+}
+.fizzbuzz:nth-of-type(3n)::before{
+  content: "fizz";
+}
+
+.fizzbuzz:nth-of-type(5n){
+  background: blue;
+}
+.fizzbuzz:nth-of-type(5n)::before{
+  content: "buzz";
+}
